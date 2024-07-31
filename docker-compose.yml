@@ -1,0 +1,12 @@
+services:
+  prolugue:
+    container_name: prolugue
+    build: .
+    restart: unless-stopped
+    networks:
+      - proxy
+    ports:
+      - 3000:3000
+networks:
+  proxy:
+    external: true
