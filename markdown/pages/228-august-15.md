@@ -18,8 +18,6 @@ Life-bearing source,
 
 We all boast of you!
 
----
-
 Those who thirst will drink Christ.
 
 By Him, the bitter is sweetened;
@@ -32,8 +30,6 @@ Life-bearing source,
 
 We all boast of you!
 
----
-
 Sweet drink sprung from eternity,
 
 Our arid age, the brook filling:
@@ -45,8 +41,6 @@ Our exhausted world becomes refreshed.
 Life-bearing source,
 
 We all boast of you!
-
----
 
 Glory to You, O Most-pure One!
 
