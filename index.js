@@ -4,6 +4,7 @@ const BASE_PATH = "./html";
 Bun.serve({
   port: 3000,
   async fetch(req) {
+    console.log(`hit! ${new Date()}`);
     const pathname = new URL(req.url).pathname;
     if (pathname === "/") {
       const filePath = BASE_PATH + pathname + "index.html";
