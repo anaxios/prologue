@@ -6,11 +6,10 @@ Feasts of St. John are celebrated several times throughout the year, but this da
 
 It is said that every year on the feast of the saint, the bishop brought the hand of St. John before the people. Sometimes the hand appeared open and other times the hand appeared clenched. In the first case, it signified a fruitful and bountiful year, and in the second case, it meant a year of unfruitfulness and famine.  
 
-***
+
 
 *) That is, those Orthodox Serbs who honor St. John the Baptist as their Krsna Slava, or the Patron Saint of their family. The Krsna Slava is the day on which Orthodox Serbian families commemorate the baptism of their ancestors into Christianity.--Trans. 
 
-***
 
 ## The Holy Martyr Athanasius
 
@@ -70,7 +69,6 @@ Whose voice is that, at which even the centuries tremble?
 
 A hungry lion! No, No--a man of faith.
 
-***
 
 ## Reflection 
 
