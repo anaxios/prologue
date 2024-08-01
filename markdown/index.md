@@ -1,34 +1,3 @@
-<style>
-h1 {
-    margin: 1rem;
-}
-  table {
-    background-color: #f0f0f0;
-    margin: 1rem; 
-    border-collapse: collapse;
-    border: 0.1rem solid #000;
-}
-  table th, table td {
-    border-left: 0.1rem solid #000;
-    border-right: 0.1rem solid #000;
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
-}
-  table th:first-child, table td:first-child {
-    border-left: none;
-}
-  table th:last-child, table td:last-child {
-    border-right: none;
-}
-  table tr:first-child th, table tr:first-child td {
-    border-top: 0.1rem solid #000;
-}
-  table tr:last-child th, table tr:last-child td {
-    border-bottom: 0.1rem solid #000;
-}
-</style>
-
-# PROLOGUE OF OCHRID
 
 | January                                 | February                                  | March                               | April                               | May                             | June                              | July                              | August                                | September                                   | October                                 | November                                  | December                                  |
 | --------------------------------------- | ----------------------------------------- | ----------------------------------- | ----------------------------------- | ------------------------------- | --------------------------------- | --------------------------------- | ------------------------------------- | ------------------------------------------- | --------------------------------------- | ----------------------------------------- | ----------------------------------------- |
