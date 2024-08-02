@@ -1,4 +1,4 @@
-//const { stat } = require("fs").promises;
+const fs = require("fs").promises;
 
 const BASE_PATH = "./html";
 Bun.serve({
@@ -6,7 +6,8 @@ Bun.serve({
   async fetch(req) {
     //console.log(`hit! ${new Date()}`);
     const pathname = new URL(req.url).pathname;
-    if (pathname === "/") {
+    const isDir = await fs.stat(BASE_PATH + pathname);
+    if (isDir.isDirectory()) {
       const filePath = BASE_PATH + pathname + "index.html";
       const file = Bun.file(filePath);
       return new Response(file);
