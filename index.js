@@ -4,11 +4,11 @@ const BASE_PATH = "./html";
 Bun.serve({
   port: 3000,
   async fetch(req) {
-    //console.log(`hit! ${new Date()}`);
     const pathname = new URL(req.url).pathname;
-    const isDir = await fs.stat(BASE_PATH + pathname);
-    if (isDir.isDirectory()) {
-      const filePath = BASE_PATH + pathname + "index.html";
+    const stats = await fs.stat(BASE_PATH + pathname);
+
+    if (stats.isDirectory()) {
+      const filePath = BASE_PATH + pathname + "/index.html";
       const file = Bun.file(filePath);
       return new Response(file);
     }
