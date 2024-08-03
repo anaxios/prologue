@@ -9,9 +9,14 @@
     /* Custom Properties */
     :root {
       /* Colors */
-      --clr-dark: 230 35% 7%;
-      --clr-light: 231 77% 90%;
-      --clr-white: 0 0% 100%;
+      /* --clr-dark: 230 35% 7%; */
+      --clr-dark: 0, 0%, 12%;
+      /* --clr-light: 231 77% 90%; */
+      --clr-light: 211, 36%, 54%;
+      /* --clr-white: 0 0% 100%; */
+      --clr-white: 140, 3%, 78%;
+      --clr-link: 48, 49%, 48%;
+      --clr-link-visited: 48, 40%, 41%;
       
       /* Fonts Sizes */
       --fs-900: 9.375rem;
@@ -117,12 +122,17 @@
     }
 
     .link a {
-      color: hsl(var(--clr-light));
+      color: hsl(var(--clr-link));
       margin: 0;
+      text-decoration: none;
     }
 
     .link a:visited {
-      color: #333; /* dark grey */
+      color: hsl(var(--clr-link-visited));
+    }
+
+    .link a:hover {
+      text-decoration: underline;
     }
 
     .container {
@@ -165,12 +175,11 @@
     .fs-600 {
       line-height: 1.1;
     }
-
   </style>
   <title>Writings</title>
   <body class="">
     <div class="container bg-accent text-dark">
       <h1 class="ff-serif letter-spacing-3 fs-700" style="text-align: center; padding-top: 1.5rem; ">Writings</h1>
-      <div class="flex"><a class="home-button" href="/">Home</a> <a class="home-button" href="/meadow/">Spiritual Meadow</a> <a class="home-button" style="margin-top: auto;font-size: 0.65rem" href="https://github.com/anaxios/prologue">Help fix typos by editing on github</a></div>
+      <div class="flex link ff-serif fs-500" style="--clr-link: var(--clr-white);--clr-link-visited: var(--clr-white); justify-content: space-between"><div class="flex"><a class="home-button" href="/">Home</a> <a class="home-button" href="/meadow/">Spiritual Meadow</a></div> <a class="home-button fs-300" href="https://github.com/anaxios/prologue">Help fix typos by editing on github</a></div>
     </div>
     <div class="flow container bg-dark text-white h link">
