@@ -109,7 +109,7 @@
 
     .flow > *:where(:not(:last-child)) {
       margin-bottom: var(--flow-space, 1rem);
-      /* outline: 1px solid red; */
+      outline: 1px solid red;
     }
     
     .h > h2 {
@@ -128,7 +128,6 @@
 
     .link a {
       color: hsl(var(--clr-link));
-      margin: 0;
       text-decoration: none;
     }
 
@@ -144,6 +143,9 @@
       padding-inline: 2em;
       max-width: 80rem;
       margin-inline: auto;
+    }
+    .meadow-nav > a:where(:not(:last-child)) {
+      margin-bottom: var(--flow-space, 1rem);
     }
     /* Colors */
     .bg-dark { background-color: hsl(var(--clr-dark));}
@@ -189,6 +191,6 @@
       <h1 class="ff-serif letter-spacing-3 fs-800 uppercase" style="text-align: center; padding-top: 1.5rem;">Enchiridion</h1>
       <h1 class="ff-sans-cond letter-spacing-3 fs-300" style="text-align: center;">of ilGuappo</h1>
 
-      <div class="flex link ff-serif-bellefairfs-500" style="--clr-link: var(--clr-white);--clr-link-visited: var(--clr-white); justify-content: space-between"><div class="flex" ><a class="home-button" style="margin: 0rem 2rem 0.3rem 0rem;" href="/">Prologue</a> <a class="home-button" style="margin: 0rem 2rem 0.3rem 0rem;" href="/meadow/">Spiritual Meadow</a></div> <a class="home-button fs-300" href="https://github.com/anaxios/prologue">Help fix typos by editing on github</a></div>
+      <div class="flex link ff-serif-bellefairfs-500" style="--clr-link: var(--clr-white);--clr-link-visited: var(--clr-white); justify-content: space-between"><div class="flex" ><a class="home-button" style="margin: 0rem 2rem 0.5rem 0rem;" href="/">Prologue</a> <a class="home-button" style="margin: 0rem 2rem 0.3rem 0rem;" href="/meadow/">Spiritual Meadow</a></div> <a class="home-button fs-300" href="https://github.com/anaxios/prologue">Help fix typos by editing on github</a></div>
     </div>
     <div class="flow container bg-dark text-white h link">
