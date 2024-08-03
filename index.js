@@ -17,6 +17,7 @@ Bun.serve({
     return new Response(file);
   },
   error() {
-    return new Response(null, { status: 404 });
+    const file = Bun.file(BASE_PATH + "/index.html");
+    return new Response(file, { status: 404 });
   },
 });
