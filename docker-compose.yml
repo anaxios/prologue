@@ -12,7 +12,7 @@ services:
       - traefik.http.routers.scrinium.rule=Host(`scrinium.daedalist.net`)
       #- traefik.http.routers.scrinium.entrypoints=https
       #- traefik.http.routers.scrinium.tls=true
-      - traefik.http.services.scrinium.loadbalancer.server.port=80
+      - traefik.http.services.scrinium.loadbalancer.server.port=3000
 networks:
   proxy:
     external: true
