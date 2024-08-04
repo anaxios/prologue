@@ -1,5 +1,3 @@
-## Welcome
-
 <h2 style="color: red;">Work in Progress</h2>
 
 <h3 style="color: red;">Links will probably be broken at some point.</h3>
