@@ -4,7 +4,7 @@ services:
     build: .
     restart: unless-stopped
     networks:
-      - proxy
+      - coolify
     ports:
       - 3000:3000
     labels:
@@ -13,9 +13,8 @@ services:
       - traefik.http.routers.scrinium.rule=Host(`scrinium.daedalist.net`) && PathPrefix(`/`)
       - traefik.http.routers.scrinium.entrypoints=http
       - traefik.http.routers.scrinium.service=scrinium
-      - traefik.http.routers.scrinium.tls=true
       - traefik.http.routers.scrinium.middlewares=gzip
       - traefik.http.services.scrinium.loadbalancer.server.port=3000
 networks:
-  proxy:
+  coolify:
     external: true
