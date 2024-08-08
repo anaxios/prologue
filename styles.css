@@ -123,12 +123,12 @@
     }
 
     .link a {
-      color: hsl(var(--clr-link));
+      color: hsl(var(--clr-compliment));
       text-decoration: none;
     }
 
     .link a:visited {
-      color: hsl(var(--clr-link-visited));
+      color: hsl(var(--clr-compliment));
     }
 
     .link a:hover {
