@@ -23,6 +23,8 @@ WORKDIR /app
 
 COPY index.js .
 COPY --from=build /app/html ./html
+COPY styles.css ./html
+COPY assets ./html/assets
 
 EXPOSE 3000
 
