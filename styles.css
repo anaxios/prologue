@@ -13,8 +13,8 @@
       --clr-white: 140 3% 78%;
       --clr-link: 48 49% 48%;
       --clr-link-visited: 48 40% 41%;
-      --clr-pink: 196 48% 197%;
-      --clr-green: 48 197% 48%;
+      --clr-pink: 300 61% 48%;
+      --clr-green: 120 61% 48%;
       
       /* Fonts Sizes */
       --fs-900: 9.375rem;
@@ -170,6 +170,9 @@
     .text-dark { color: hsl(var(--clr-dark));}
     .text-accent  { color: hsl(var(--clr-light));}
     .text-white  { color: hsl(var(--clr-white));}
+    .text-compliment  { color: hsl(var(--clr-compliment));}
+    .text-pink  { color: hsl(var(--clr-pink));}
+    .text-green  { color: hsl(var(--clr-green));}
 
     /* Typography */
     .ff-serif { font-family: var(--ff-serif);}
