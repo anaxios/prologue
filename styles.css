@@ -209,14 +209,14 @@ nav a {
   line-height: 1.1;
 }
 
-@media screen and (min-width: 581px) and (max-width: 900px) {
+@media screen and (min-width: 581px) and (max-width: 900px) and (-webkit-device-pixel-ratio: 3) {
 
   #header {
     --fs-800: var(--fs-700);
   }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 580px) and (-webkit-device-pixel-ratio: 3) {
 
   #header {
     --fs-700: var(--fs-600);
