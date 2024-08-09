@@ -209,19 +209,21 @@ nav a {
   line-height: 1.1;
 }
 
-@media screen and (min-width: 480px) and (max-width: 900px) {
+@media screen and (min-width: 581px) and (max-width: 900px) {
 
   #header {
     --fs-800: var(--fs-700);
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
 
   #header {
     --fs-700: var(--fs-600);
   }
-
+  nav a {
+    margin: 0rem 0.1rem 0.5rem 0.1rem;
+  }
   .container {
     padding-inline: 0.2em;
 }
