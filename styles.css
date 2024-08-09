@@ -216,7 +216,7 @@ nav a {
   }
 }
 
-@media screen and (max-width: 580px) and (-webkit-device-pixel-ratio: 3) {
+@media screen and (max-width: 580px) and (-webkit-device-pixel-ratio: 2) {
 
   #header {
     --fs-700: var(--fs-600);
