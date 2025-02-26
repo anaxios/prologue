@@ -15,7 +15,7 @@ COPY markdown ./markdown
 RUN mkdir html
 
 RUN chmod +x ssg
-RUN /app/ssg markdown/ html/ Prologue https://prologue.daedalist.net
+RUN /app/ssg markdown/ html/ Scrinium https://scrinium.daedalist.net
 
 FROM oven/bun:latest
 
