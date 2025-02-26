@@ -1,26 +1,26 @@
-# The Synaxis [Assembly] of the Seventy Holy Apostles
+## The Synaxis [Assembly] of the Seventy Holy Apostles
 
 Besides the Twelve Greater Apostles, the Lord chose seventy lesser apostles and sent them to preach the Gospel: *Behold, I send you forth as lambs among wolves* (Luke 10:3). But just as Judas, one of the Twelve, fell away from the Lord, so some of the Seventy abandoned the Lord—not with the intention of betrayal, but because of human weakness and faintheartedness. *As a result of this, many of His disciples returned to their former way of life and no longer accompanied Him* (John 6:66). As Judas' place was filled by another apostle, so also were the places of these lesser apostles filled by others that were chosen. These seventy lesser apostles labored at the same work as did the Twelve Great Apostles; they were co-workers with the Twelve in spreading and establishing the Church of God in the world. They endured many sufferings and malevolent acts from men and demons, but their strong faith and fervent love for the resurrected Lord made them victors over the world and inheritors of the Kingdom of Heaven.
 
 
-# Eustathius [Jevstatiye], Archbishop of the Serbs
+## Eustathius [Jevstatiye], Archbishop of the Serbs
 
 Eustathius was born in the district of Budim, of God-fearing parents. As a young man he was tonsured a monk in Zeta; then he entered a higher form of asceticism in the Hilandar Monastery [on Mount Athos]. In time, Eustathius became the Abbot of Hilandar. As abbot, he was elected Bishop of Zeta and, after a certain period of time, was elected Archbishop of Serbia. Eustathius was a man of great charity, who governed Christ's flock with zeal and love. He reposed peacefully at great age in the year 1279 A.D., crying out before his death: "Into Thy hands, O Lord, I commend my soul." His relics are interred under the floor of the church at the Patriarchate of Peć.
 
 
-# The Eunuch of Queen Candace
+## The Eunuch of Queen Candace
 
 The Apostle Philip baptized this Ethiopian eunuch (Acts 8:26-40). Following his baptism, he returned to his home and began to preach Christ. This eunuch was the first apostle of the Faith among the Ethiopians. He died a martyr and was found worthy of the Kingdom of God.
 
 
-# The Venerable Martyr Onuphrius of Hilandar Monastery [Mount Athos]
+## The Venerable Martyr Onuphrius of Hilandar Monastery [Mount Athos]
 
 In his youth, Onuphrius became angry with his parents and declared before the Turks that he was going to convert to Islam. Immediately afterward, he repented of these words and went to Hilandar Monastery, where he was tonsured a monk. Tormented by his conscience, Onuphrius resolved upon martyrdom. Because of his determination, and with the blessing of his spiritual father, he departed for Trnovo, Bulgaria, where he reported to the Turks, proclaimed himself a Christian, and ridiculed Muhammad. Because of that, Onuphrius was beheaded on January 4, 1818 A.D., in his thirty-second year. The body of this spiritual knight is not preserved, for the Turks threw it into the sea.
 
 
-# Hymn of Praise
+## Hymn of Praise
 
-## The Seventy Holy Apostles
+### The Seventy Holy Apostles
 
 O knights of the Cross, sons of light,
 
@@ -67,12 +67,12 @@ Holy Apostles, glory and praise be to you.
 From your blood, truth blossomed.
 
 
-# Reflection
+## Reflection
 
 God hears the prayers of the just. This is clearly seen from the lives of Moses, Elijas, and the other Old Testament righteous ones and prophets, as well as from the lives of the apostles and saints. While St. Genevieve lived a life of asceticism as a nun in Paris, it so happened that Attila with his savage Huns surrounded Paris. Fear and terror overcame the entire population, who awaited at any moment the capture of the city by the enemy. Then St. Genevieve called upon the people to fast and to pray to God that the calamity might be averted. Many men and women responded to the call of this saint and began to fast and pray to God. Genevieve herself fasted more strictly than all, and prayed most ardently to God. After a short while, the enemy turned away from Paris without any visible reason and departed for another place. That which the sword of many sinners cannot do, the prayer of the righteous person can.
 
 
-# Contemplation
+## Contemplation
 
 Contemplate the richness of God's power, wisdom, and love:
 
@@ -81,9 +81,9 @@ Contemplate the richness of God's power, wisdom, and love:
 2. How the richness of that power, wisdom, and love is revealed to the world through the Lord Jesus Christ.
 
 
-# Homily
+## Homily
 
-## On the Citizens of the Other World
+### On the Citizens of the Other World
 
 "They are not of the world, even as I am not of the world" (John 17:16)
 
