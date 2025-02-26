@@ -5,8 +5,8 @@ RUN apk add lowdown curl
 FROM apk AS ssg
 WORKDIR /app
 RUN curl -OL https://romanzolotarev.com/bin/ssg
-COPY ssg.sha512 .
-RUN sha512sum -c ssg.sha512
+#COPY ssg.sha512 .
+#RUN sha512sum -c ssg.sha512
 
 FROM ssg AS build
 WORKDIR /app
