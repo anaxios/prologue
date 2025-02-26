@@ -124,12 +124,18 @@ select {
   line-height: var(--xl);
 }
 
-.h h2 + h3 {
+.h > h3 {
   text-align: center;
-  font-family: var(--ff-sans-cond);
+  margin-top: 3rem;
+  font-family: var(--ff-serif-bellefair);
   font-size: var(--l);
   line-height: var(--l);
 }
+
+/* .h h2 + h3 {
+  text-align: center;
+  font-family: var(--ff-sans-cond);
+} */
 
 .link a {
   color: hsl(var(--clr-compliment));
