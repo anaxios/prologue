@@ -1,30 +1,28 @@
-FROM alpine AS apk
-RUN apk update 
-RUN apk add lowdown curl
+# FROM alpine AS apk
+# RUN apk update 
+# RUN apk add lowdown curl
 
-FROM apk AS ssg
-WORKDIR /app
-RUN curl -OL https://romanzolotarev.com/bin/ssg
-#COPY ssg.sha512 .
-#RUN sha512sum -c ssg.sha512
+# FROM apk AS ssg
+# WORKDIR /app
+# RUN curl -OL https://romanzolotarev.com/bin/ssg
+# #COPY ssg.sha512 .
+# #RUN sha512sum -c ssg.sha512
 
-FROM ssg AS build
-WORKDIR /app
+# FROM ssg AS build
+# WORKDIR /app
 
-COPY markdown ./markdown
-RUN mkdir html
+# COPY markdown ./markdown
+# RUN mkdir html
 
-RUN chmod +x ssg
-RUN /app/ssg markdown/ html/ Scrinium https://scrinium.daedalist.net
+# RUN chmod +x ssg
+# RUN /app/ssg markdown/ html/ Scrinium https://scrinium.daedalist.net
 
 FROM oven/bun:latest
 
 WORKDIR /app
 
 COPY index.js .
-COPY --from=build /app/html ./html
-COPY styles.css ./html
-COPY assets ./html/assets
+COPY ./dist ./html
 
 EXPOSE 3000
 
