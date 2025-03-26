@@ -80,7 +80,9 @@ h5,
 h6 {
   text-align: center;
 }
-
+p {
+  text-indent: var(--xl);
+}
 /* set up body */
 body {
   font-family: var(--ff-sans-normal);
@@ -139,10 +141,12 @@ select {
   line-height: var(--l);
 }
 
-/* .h h2 + h3 {
+.h > h4 {
   text-align: center;
-  font-family: var(--ff-sans-cond);
-} */
+  font-family: var(--clr-compliment);
+  font-size: var(--s);
+  line-height: var(--s);
+}
 
 .link a {
   color: hsl(var(--clr-compliment));

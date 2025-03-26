@@ -5,7 +5,7 @@ tags: [nav]
 ---
 
 <ul>
-{%- for page in collections.blog -%}
-      <li><a href="{{ page.url }}">{{  page.url }}</a></li>
+{%- for page in collections.blog | reverse -%}
+      <li><a href="{{ page.url }}">{{  page.data.title}}</a>&emsp;{{ page.date }}</li>
 {%- endfor -%}
 </ul>

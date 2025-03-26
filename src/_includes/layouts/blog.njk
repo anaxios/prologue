@@ -1,3 +1,4 @@
-{% extends "layouts/base.njk" %} {% block content %}
+{% extends "layouts/prologue.njk" %} {% block content %}
+<h2>{{ title | capitalize }}</h2>
 {{ content | safe }}
 {% endblock %}
