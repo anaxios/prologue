@@ -3,8 +3,8 @@ services:
     container_name: prologue
     build: .
     restart: unless-stopped
-    networks:
-      - coolify
+    # networks:
+    #   - coolify
     ports:
       - 3000:3000
     # labels:
@@ -15,6 +15,6 @@ services:
     #   - traefik.http.routers.scrinium.service=scrinium
     #   - traefik.http.routers.scrinium.middlewares=gzip
     #   - traefik.http.services.scrinium.loadbalancer.server.port=3000
-networks:
-  coolify:
-    external: true
+# networks:
+#   coolify:
+#     external: true

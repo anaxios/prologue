@@ -1,6 +1,6 @@
 const fs = require("fs").promises;
 
-const BASE_PATH = "./html";
+const BASE_PATH = "dist";
 Bun.serve({
   port: 3000,
   async fetch(req) {

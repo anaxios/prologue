@@ -1,28 +1,19 @@
-# FROM alpine AS apk
-# RUN apk update 
-# RUN apk add lowdown curl
+FROM oven/bun:latest AS build
+WORKDIR /app
 
-# FROM apk AS ssg
-# WORKDIR /app
-# RUN curl -OL https://romanzolotarev.com/bin/ssg
-# #COPY ssg.sha512 .
-# #RUN sha512sum -c ssg.sha512
+COPY src src
+COPY .eleventy.js .
+COPY package.json .
 
-# FROM ssg AS build
-# WORKDIR /app
-
-# COPY markdown ./markdown
-# RUN mkdir html
-
-# RUN chmod +x ssg
-# RUN /app/ssg markdown/ html/ Scrinium https://scrinium.daedalist.net
+RUN bun install
+RUN bun run eleventy
 
 FROM oven/bun:latest
 
 WORKDIR /app
 
+COPY --from=build /app/dist dist
 COPY index.js .
-COPY ./dist ./html
 
 EXPOSE 3000
 
