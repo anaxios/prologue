@@ -1,6 +1,7 @@
 ---
 title: Spiritual Meadow
 layout: layouts/prologue
+tags: [nav]
 ---
 
 <ul>

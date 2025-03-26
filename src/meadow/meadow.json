@@ -1,1 +1,5 @@
-{ "tags": ["meadow"], "layout": "layouts/prologue" }
+{
+  "title": "Spiritual Meadow",
+  "tags": ["meadow"],
+  "layout": "layouts/meadow"
+}

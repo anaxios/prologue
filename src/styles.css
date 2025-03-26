@@ -40,7 +40,14 @@
   --ff-sans-condition: "Barlow Condensed", sans-serif;
   --ff-sans-normal: "Noto Znamenny Musical Notation", sans-serif;
 
-  --ff-serif-bellefair: "Bellefair", serif;
+  --ff-serif-bellefair: "Cormorant", serif;
+}
+
+.cormorant-title {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Reset */

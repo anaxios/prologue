@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png" />
     <!-- Google fonts -->
+<!-- new -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+<!-- old -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,8 +43,8 @@
       style="
         background: linear-gradient(
           to left,
-          hsl(var(--clr-compliment) / 0.25),
-          hsl(var(--clr-light) / 0.25)
+          hsl(var(--clr-light) / 0.25),
+          hsl(var(--clr-compliment) / 0.25)
         );
       "
     >
@@ -55,25 +61,25 @@
           src="/assets/logo.png"
           alt="logo"
         />
-        <h1 class="ff-serif-bellefair fs-xl uppercase">Scrinium</h1>
+        <h1 class="ff-serif-bellefair fs-xl uppercase">{{ title }}</h1>
       </div>
-      <h1 class="ff-sans-cond letter-spacing-3 fs-s" style="text-align: center">
-        of ilGuappo
-      </h1>
       <nav
         class="flex link ff-serif-bellefair fs-m"
         style="--clr-compliment: var(--clr-white); justify-content: center"
       >
-        <a href="/">Home</a>
-        <!-- <a href="/blog/">Blog</a> -->
+      {%- for nav in collections.nav -%}
+      <a href="{{ nav.url }}">{{  nav.data.title | capitalize }}</a>
+      {%- endfor -%}
+        <!-- <a href="/">Home</a>
+         <a href="/blog/">Blog</a> 
         <a href="/prologue/">Prologue</a>
-        <a href="/meadow/">Spiritual Meadow</a>
+        <a href="/meadow/">Spiritual Meadow</a> -->
       </nav>
     </div>
     <div class="flow container bg-dark text-white h link">
       {% block content %}{% endblock %}
 
-      <a class="fs-300" href="https://github.com/anaxios/prologue"
+      <a class="fs-300" href="https://github.com/anaxios/scrinium"
         >Help fix tpyos by editing on github</a
       >
     </div>

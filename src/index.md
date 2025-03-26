@@ -1,6 +1,7 @@
 ---
-title: "WIP"
+title: "scrinium"
 layout: "layouts/home.njk"
+tags: [nav]
 ---
 
 ### Links will probably be broken at some point.

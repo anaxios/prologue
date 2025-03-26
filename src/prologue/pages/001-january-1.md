@@ -1,3 +1,7 @@
+---
+title: January 1
+---
+
 ## The Circumcision of Our Lord and God and Savior Jesus Christ
 
 On the eighth day following His birth, the Divine Child was presented in the Temple and circumcised according to the Law existing in Israel since the time of Abraham. On this occasion, He was given the name Jesus, which the Archangel Gabriel announced to the Most-Holy Virgin Mary. The Old Testament circumcision was the prefiguring of the New Testament baptism. The circumcision of our Lord shows that He truly received upon Himself the body of man and not just seemingly, as was later taught of Him by heretics. Our Lord was also circumcised because He wanted to fulfill the entire Law, which He Himself gave through the prophets and forefathers. In fulfilling the written Law, He replaced it with Baptism in His Holy Church, as was proclaimed by the Apostle Paul: _For in Christ Jesus neither circumcision availeth anything, nor uncircumcision, but a new creation_ (Galatians 6:15). (In the cycle of the liturgical calendar of the Church, this Feast of the Lord's Circumcision has neither a Forefeast nor an Antefeast).
