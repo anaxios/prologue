@@ -1,0 +1,17 @@
+{
+  "name": "prologue",
+  "version": "1.0.0",
+  "description": "requires https://romanzolotarev.com/ssg.html",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx eleventy --serve",
+    "build": "npx eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
