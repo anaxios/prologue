@@ -1,7 +1,7 @@
 {
-  "name": "prologue",
+  "name": "scrinium",
   "version": "1.0.0",
-  "description": "requires https://romanzolotarev.com/ssg.html",
+  "description": "My personal Scrinium",
   "main": "index.js",
   "scripts": {
     "serve": "npx eleventy --serve",
@@ -10,7 +10,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  
   "dependencies": {
     "@11ty/eleventy": "^3.0.0"
   }
