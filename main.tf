@@ -7,13 +7,13 @@ terraform {
   }
 }
 
-cloud {
-  organization = "september"
-  workspaces {
-    name = "scrinium"
-  }
+# cloud {
+#   organization = "september"
+#   workspaces {
+#     name = "scrinium"
+#   }
 
-}
+# }
 
 provider "docker" {
   #host = "npipe:////.//pipe//docker_engine"
