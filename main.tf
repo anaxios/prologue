@@ -38,9 +38,9 @@ resource "docker_image" "scrinium" {
 }
 
 variable "DOCKER_REGISTRY_USER" {
-
+  sensitive = true
 }
 
 variable "DOCKER_REGISTRY_PASS" {
-
+  sensitive = true
 }
