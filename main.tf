@@ -7,8 +7,17 @@ terraform {
   }
 }
 
+cloud {
+  organization = "september"
+  workspaces {
+    name = "scrinium"
+  }
+
+}
+
 provider "docker" {
-  host = "unix:///var/run/docker.sock"
+  #host = "npipe:////.//pipe//docker_engine"
+  host = "ssh://bob@104.245.107.143:22"
   registry_auth {
     address = "registry-1.docker.io"
     # username = "someuser"
