@@ -4,8 +4,7 @@ layout: layouts/prologue
 tags: [nav]
 ---
 
-<ul>
     {%- for page in collections.meadow -%}
-      <li><a href="{{ page.url }}">{{  page.url }}</a></li>
+    {{ page.content | safe }}
+      <a href="{{ page.url }}">GOTO</a>
     {%- endfor -%}
-</ul>

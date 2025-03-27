@@ -4,8 +4,10 @@ layout: layouts/blog
 tags: [nav]
 ---
 
-<ul>
 {%- for page in collections.blog | reverse -%}
-      <li><a href="{{ page.url }}">{{  page.data.title}}</a>&emsp;{{ page.date }}</li>
+
+<h2><a href="{{ page.url }}">{{ page.data.title}}</a></h2>
+<h4>{{ page.date }}</h4>
+<p>{{ page.data.description }}</p>
+
 {%- endfor -%}
-</ul>
