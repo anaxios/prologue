@@ -81,7 +81,7 @@ h6 {
   text-align: center;
 }
 p {
-  text-indent: var(--xl);
+  text-indent: var(--l);
 }
 /* set up body */
 body {
