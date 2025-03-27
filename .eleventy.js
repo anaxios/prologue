@@ -25,6 +25,25 @@ module.exports = (eleventyConfig) => {
     return localDate;
   });
 
+  eleventyConfig.addFilter("shorten", function (str, count) {
+    return str.split(" ", count || 15).join(" ");
+  });
+
+  eleventyConfig.addFilter("dateHuge", function (str) {
+    return DateTime.local(str).toLocaleString(DateTime.DATETIME_HUGE);
+  });
+
+  eleventyConfig.addFilter("prologueUrlToMonthDate", function (str) {
+    const temp = str.split("-").slice(-2);
+    const month = temp[0].charAt(0).toUpperCase() + temp[0].slice(1);
+    const date = temp[1].replace("/", "");
+    return `${month} ${date}`;
+  });
+
+  eleventyConfig.addFilter("monthDateToDate", function (str) {
+    return DateTime.fromFormat(str, "MMMM d");
+  });
+
   return {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",

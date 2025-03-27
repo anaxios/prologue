@@ -4,7 +4,7 @@
         {{ title }}
     </h2>
     <h4>
-        {{ page.date }}
+        {{ page.date | dateHuge }}
     </h4>
     {{ content | safe }}
 {% endblock %}
