@@ -25,9 +25,9 @@ resource "docker_image" "scrinium" {
   build {
     context = "."
     tag     = ["anaxios/scrinium:latest"]
-    triggers = {
-      dir_sha1 = sha1(join("", [for f in fileset(path.module, "src/*") : filesha1(f)]))
-    }
+    # triggers = {
+    #   dir_sha1 = sha1(join("", [for f in fileset(path.module, "src/*") : filesha1(f)]))
+    # }
     # build_arg = {
     #   foo : "zoo"
     # }
