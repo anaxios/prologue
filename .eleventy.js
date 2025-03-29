@@ -3,7 +3,7 @@ const { DateTime } = require("luxon");
 const TIME_ZONE = "America/Chicago";
 
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addPassthroughCopy("src/styles.css");
+  eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/assets");
 
   eleventyConfig.addDateParsing(function (dateValue) {
