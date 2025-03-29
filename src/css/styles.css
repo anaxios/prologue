@@ -4,13 +4,23 @@
   -moz-osx-font-smoothing: grayscale;
   font-smooth: never;
 
-  --m: 1rem;
+  /* --m: 1rem;
   --l: calc(1rem * 1.618);
   --xl: calc(1rem * 1.618 * 1.618);
   --xxl: calc(1rem * 1.618 * 1.618 * 1.618);
   --s: calc(1rem / 1.618);
   --xs: calc(1rem / 1.618 / 1.618);
-  --xxs: calc(1rem / 1.618 / 1.618 / 1.618);
+  --xxs: calc(1rem / 1.618 / 1.618 / 1.618); */
+
+  --m: 1rem;
+  --l: calc(var(--m) * 1.618);
+  --xl: calc(var(--l) * 1.618);
+  --xxl: calc(var(--xl) * 1.618);
+  --s: calc(var(--m) * 0.618);
+  --xs: calc(var(--s) * 0.618);
+  --xxs: calc(var(--xs) * 0.618);
+
+  --gap: var(--m);
 
   /* Colors */
   /* --clr-dark: 230 35% 7%; */
@@ -81,7 +91,7 @@ h6 {
   text-align: center;
 }
 p {
-  text-indent: var(--l);
+  text-indent: var(--m);
 }
 /* set up body */
 body {
@@ -112,22 +122,22 @@ select {
 /* Utility Classes */
 .flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: var(--gap);
 }
 
 .grid {
   display: grid;
-  gap: var(--gap, 1rem);
+  gap: var(--gap);
 }
 
 .flow > *:where(:not(:last-child)) {
-  margin-bottom: var(--flow-space, 1rem);
+  margin-bottom: var(--gap);
   /* outline: 1px solid red; */
 }
 
 .h > h2 {
   text-align: center;
-  margin-top: 3rem;
+
   font-family: var(--ff-serif-bellefair);
   font-size: var(--xl);
   line-height: var(--xl);
@@ -135,7 +145,7 @@ select {
 
 .h > h3 {
   text-align: center;
-  margin-top: 3rem;
+
   font-family: var(--ff-serif-bellefair);
   font-size: var(--l);
   line-height: var(--l);
@@ -162,12 +172,18 @@ select {
 }
 
 .container {
-  padding-inline: 2em;
-  max-width: 70rem;
+  max-width: 90ch;
   margin-inline: auto;
+  padding-inline: var(--m);
 }
 
-.meadow-nav > a:where(:not(:last-child)) {
+.text-container {
+  max-width: 70ch;
+  margin-inline: auto;
+  padding-top: var(--m);
+}
+
+/* .meadow-nav > a:where(:not(:last-child)) {
   margin-bottom: var(--flow-space, 1rem);
 }
 
@@ -178,18 +194,18 @@ select {
 
 .prologue-nav > div {
   text-align: center;
-}
+} */
 
 nav {
-  margin-top: 1.5em;
+  margin-top: var(--m);
 }
 
 nav h2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--m);
 }
 
 nav a {
-  margin: 0rem 0.3rem 0.5rem 0.3rem;
+  margin: var() var(--s) var(--s) var(--s);
 }
 
 /* Colors */
