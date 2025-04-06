@@ -1,12 +1,17 @@
 services:
   prologue:
     container_name: prologue
-    build: .
+    build:
+      context: .
     restart: unless-stopped
     # networks:
     #   - coolify
     ports:
       - 3000:3000
+    develop:
+      watch:
+        - action: rebuild
+          path: .
     # labels:
     #   - traefik.enable=true
     #   - traefik.http.middlewares.gzip.compress=true
