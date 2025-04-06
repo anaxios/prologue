@@ -58,3 +58,30 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs:
+      - docker
+    steps:
+      - name: deploying
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            docker image pull anaxios/scrinium:latest
+            docker container stop scrinium
+            docker container rm scrinium
+            docker container run -d --name scrinium \
+            -l traefik.enable=true \
+            -l traefik.http.middlewares.gzip.compress=true \
+            -l traefik.http.routers.scrinium.rule=Host(`daedalist.net`) && PathPrefix(`/`) \
+            -l traefik.http.routers.scrinium.entrypoints=http \
+            -l traefik.http.routers.scrinium.service=scrinium \
+            -l traefik.http.routers.scrinium.middlewares=gzip \
+            -l traefik.http.services.scrinium.loadbalancer.server.port=3000 \
+            --network=proxy \
+            anaxios/scrinium
