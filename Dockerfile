@@ -18,7 +18,7 @@ COPY index.js .
 
 EXPOSE 3000
 
-ENTRYPOINT bun index.js
+ENTRYPOINT ["bun", "run", "index.js"]
 
 #CMD sh -c 'while true; do sleep 10;done'
 
