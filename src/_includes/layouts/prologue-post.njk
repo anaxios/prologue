@@ -1,5 +1,5 @@
 {% extends "layouts/base.njk" %}
 {% block content %}
-    <h1>{{ title | capitalize }}</h1>
+    <h1>{{ page.url | prologueUrlToMonthDate }}</h1>
     {{ content | safe }}
 {% endblock %}
