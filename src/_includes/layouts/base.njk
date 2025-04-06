@@ -21,8 +21,8 @@
       rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
     <title>{{ title }}</title>
-    <meta content="Scrinium" property="og:title"/>
-    <meta content="A repository of knowledge" property="og:description"/>
+    <meta content="{{ title }}" property="og:title"/>
+    <meta content="{%- if description -%}{{ description }} {%- else -%} This site is a collection of writings, quotes, and personal projects that I have found thought-provoking and informative. {%- endif -%}" property="og:description"/>
     <meta content="https://embed.com/this-is-the-site-url" property="og:url"/>
     <meta content="/assets/logo.png" property="og:image"/>
   <meta
