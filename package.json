@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "hono": "^4.7.5",
     "luxon": "^3.6.0"
   }
 }
