@@ -4,6 +4,7 @@ WORKDIR /app
 COPY src src
 COPY .eleventy.js .
 COPY package.json .
+COPY bun.lock     .
 
 RUN bun install
 RUN bun run eleventy
