@@ -37,16 +37,18 @@
         39%, rgba(197,122,48,0.0718662464985994) 91%)">
       <div class="flex" style="justify-content: center; align-items: center; padding-top: 1.5rem; ">
         <img style="height: var(--xl); width: var(--xl)" src="/assets/logo.png" alt="logo"/>
-        <h1 class="ff-serif-bellefair fs-xl uppercase">Scrinium</h1>
+        <h1 class="ff-serif-bellefair fs-xl uppercase">Daedalist</h1>
       </div>
       <nav
         class="flex link ff-serif-bellefair fs-m"
         style="flex-wrap: wrap; --clr-compliment: var(--clr-white); justify-content: center">
-        {%- for nav in collections.nav -%}
-          <a href="{{ nav.url }}">{{ nav.data.title | title }}</a>
-        {%- endfor -%}
-        <!-- <a href="/">Home</a> <a href="/blog/">Blog</a> <a href="/prologue/">Prologue</a> <a href="/meadow/">Spiritual
-        Meadow</a> -->
+        {# {%- for nav in collections.nav -%}
+                                                                                                                  <a href="{{ nav.url }}">{{ nav.data.title | title }}</a>
+                                                                                                                {%- endfor -%} #}
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/prologue/">Prologue</a>
+        <a href="/meadow/">Spiritual Meadow</a>
       </nav>
     </div>
     <div class="flow text-container bg-dark text-white h link"> {% block content %}{% endblock %}
