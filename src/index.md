@@ -1,5 +1,5 @@
 ---
-title: "scrinium"
+title: "Daedalist"
 layout: "layouts/home.njk"
 tags: [nav]
 ---
