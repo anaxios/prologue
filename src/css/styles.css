@@ -131,27 +131,28 @@ select {
 }
 
 .flow > *:where(:not(:last-child)) {
+  /* --gap: var(--xxl); */
   margin-bottom: var(--gap);
   /* outline: 1px solid red; */
 }
 
-.h > h2 {
+.h > h1 {
   text-align: center;
-
+  padding-top: var(--xl);
   font-family: var(--ff-serif-bellefair);
   font-size: var(--xl);
   line-height: var(--xl);
 }
 
-.h > h3 {
+.h > h2 {
   text-align: center;
-
+  padding-top: var(--l);
   font-family: var(--ff-serif-bellefair);
   font-size: var(--l);
   line-height: var(--l);
 }
 
-.h > h4 {
+.h > h3 {
   text-align: center;
   font-family: var(--clr-compliment);
   font-size: var(--s);
@@ -169,6 +170,14 @@ select {
 
 .link a:hover {
   text-decoration: underline;
+}
+
+.flow > h1:where(:first-child) {
+  padding-top: 0;
+}
+
+.flow > h2:where(:first-child) {
+  padding-top: 0;
 }
 
 .container {

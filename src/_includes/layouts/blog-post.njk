@@ -1,10 +1,10 @@
 {% extends "layouts/base.njk" %}
 {% block content %}
-    <h2>
+    <h1>
         {{ title }}
-    </h2>
-    <h4>
+    </h1>
+    <h3>
         {{ page.date | dateHuge }}
-    </h4>
+    </h3>
     {{ content | safe }}
 {% endblock %}
