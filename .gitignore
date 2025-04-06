@@ -189,3 +189,6 @@ Thumbs.db
 node_modules
 dist
 src/_includes/css
+
+id_e25519*
+id_rsa*
