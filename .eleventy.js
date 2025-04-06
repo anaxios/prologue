@@ -40,6 +40,12 @@ module.exports = (eleventyConfig) => {
     return `${month} ${date}`;
   });
 
+  eleventyConfig.addFilter("prologueSort", function (str) {
+    return str.sort(function (a, b) {
+      return a.url.slice(16, 19) - b.url.slice(16, 19);
+    });
+  });
+
   eleventyConfig.addFilter("monthDateToDate", function (str) {
     return DateTime.fromFormat(str, "MMMM d");
   });
