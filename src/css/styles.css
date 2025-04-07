@@ -53,24 +53,17 @@
   --ff-serif-bellefair: "Cormorant", serif;
 }
 
-.cormorant-title {
-  font-family: "Cormorant", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* Reset */
+/* Reset
 
 /* Box Sizing */
-*,
+/* *,
 * ::before,
 * ::after {
   box-sizing: border-box;
-}
+} */
 
 /* Reset Margins */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -80,6 +73,42 @@ p,
 figure,
 picture {
   margin: 0;
+  padding: 0;
+}  */
+
+/* set up body */
+body {
+  font-family: var(--ff-sans-normal);
+  font-size: var(--m);
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-dark));
+  line-height: var(--l);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Easier Images */
+/* img,
+picture {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+} */
+
+/* Easier Form Elements */
+/* input,
+button,
+textarea,
+select {
+  font: inherit;
+} */
+
+.cormorant-title {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1,
@@ -93,31 +122,6 @@ h6 {
 p {
   text-indent: var(--m);
 }
-/* set up body */
-body {
-  font-family: var(--ff-sans-normal);
-  font-size: var(--m);
-  color: hsl(var(--clr-white));
-  background-color: hsl(var(--clr-dark));
-  line-height: var(--l);
-  min-height: 100vh;
-}
-
-/* Easier Images */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-/* Easier Form Elements */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
 
 /* Utility Classes */
 .flex {
@@ -129,6 +133,10 @@ select {
   display: grid;
   gap: var(--gap);
 }
+
+/* .flow {
+  padding-inline: max(var(--m, 0));
+} */
 
 .flow > *:where(:not(:last-child)) {
   /* --gap: var(--xxl); */
@@ -173,23 +181,23 @@ select {
 }
 
 .flow > h1:where(:first-child) {
-  padding-top: 0;
+  padding-top: var(--m);
 }
 
-.flow > h2:where(:first-child) {
-  padding-top: 0;
+.flow > *:where(:first-child) {
+  padding-top: var(--m);
 }
 
 .container {
-  max-width: 90ch;
+  width: min(100%, 90ch);
   margin-inline: auto;
-  padding-inline: var(--m);
+  /* padding-inline: var(--m); */
 }
 
 .text-container {
-  max-width: 70ch;
+  width: min(95%, 70ch);
   margin-inline: auto;
-  padding-top: var(--m);
+  /* padding-top: var(--m); */
 }
 
 /* .meadow-nav > a:where(:not(:last-child)) {
@@ -301,9 +309,9 @@ nav a {
   #header {
     --fs-800: var(--fs-700);
   }
-}
+} */
 
-@media screen and (max-width: 580px) and (-webkit-device-pixel-ratio: 2) {
+/* @media screen and (max-width: 580px) and (-webkit-device-pixel-ratio: 2) {
   #header {
     --fs-700: var(--fs-600);
   }
