@@ -19,6 +19,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
       rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
     <title>{{ title }}</title>
     <meta content="{{ title }}" property="og:title"/>
@@ -30,29 +31,28 @@
   <!-- <meta name="twitter:card" content="summary_large_image" /> -->
   </head>
   <body class="">
-    <div
+    <header
       id="header"
       class="container bg-accent text-white"
       style="background: linear-gradient(135deg, rgba(197,48,197,0.08867296918767509) 2%, rgba(48,122,197,0.0802696078431373)
         39%, rgba(197,122,48,0.0718662464985994) 91%)">
-      <div class="flex" style="justify-content: center; align-items: center; padding-top: 1.5rem; ">
+      <div class="flex" style="justify-content: center; align-items: center; padding-top: var(--l);">
         <img style="height: var(--xl); width: var(--xl)" src="/assets/logo.png" alt="logo"/>
         <h1 class="ff-serif-bellefair fs-xl uppercase">Daedalist</h1>
       </div>
       <nav
         class="flex link ff-serif-bellefair fs-m"
         style="flex-wrap: wrap; --clr-compliment: var(--clr-white); justify-content: center">
-        {# {%- for nav in collections.nav -%}
-                                                                                                                  <a href="{{ nav.url }}">{{ nav.data.title | title }}</a>
-                                                                                                                {%- endfor -%} #}
         <a href="/">Home</a>
         <a href="/blog/">Blog</a>
         <a href="/prologue/">Prologue</a>
         <a href="/meadow/">Spiritual Meadow</a>
       </nav>
-    </div>
-    <div class="flow text-container bg-dark text-white h link"> {% block content %}{% endblock %}
-      <a class="fs-300" href="https://github.com/anaxios/scrinium">Help fix tpyos by editing on github</a>
-    </div>
-  </body>
-</html>
+    </header>
+    <div class="flow text-container bg-dark text-white h link" style="flex-grow: 1;"> {% block content %}{% endblock %}
+      </div>
+      <footer class="flow text-container bg-dark text-white h link">
+        <a class="fs-300" href="https://github.com/anaxios/scrinium">Contribute & help fix tpyos by editing on github</a>
+      </footer>
+    </body>
+  </html>
