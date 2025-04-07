@@ -1,3 +1,8 @@
-{% extends "layouts/prologue.njk" %} {% block content %}
-{{ content | safe }}
+{% extends "layouts/prologue.njk" %}
+{% block content %}
+    <div class="container">
+        <div class="flow text-container text-white h link txt-justify">
+            {{ content | safe }}
+        </div>
+    </div>
 {% endblock %}

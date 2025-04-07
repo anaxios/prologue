@@ -1,0 +1,14 @@
+---
+title: Spiritual Meadow
+layout: flow
+tags: [nav]
+---
+
+<div class="container">
+    <div class="flow text-container text-white h link">
+        {%- for page in collections.meadow -%}
+            {{ page.content | safe }}
+            <a href="{{ page.url }}">GOTO</a>
+        {%- endfor -%}
+    </div>
+</div>

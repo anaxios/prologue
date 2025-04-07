@@ -1,5 +1,5 @@
 {
   "title": "Prologue",
   "tags": "prologue",
-  "layout": "layouts/prologue-post.njk"
+  "layout": "prologue-post.njk"
 }

@@ -3,6 +3,7 @@ services:
     container_name: prologue
     build:
       context: .
+      target: development
     restart: unless-stopped
     # networks:
     #   - coolify

@@ -1,0 +1,27 @@
+---
+title: Blog Posts
+layout: main
+tags: [nav]
+---
+
+<div class="container flow h link" style="padding-top:var(--xl);">
+    <h1>{{ title }}</h1>
+
+    {%- for page in collections.blog | reverse -%}
+
+        <div class="border-gradient container bg-dark">
+            <div class="text-container flow h link">
+                <h2>
+                    <a href="{{ page.url }}">{{ page.data.title }}</a>
+                </h2>
+                <p>{{ page.content | shorten(50) | safe }}   . . .</p>
+                <p>
+                    <a href="{{ page.url }}">Read More</a>
+                </p>
+                <h3>{{ page.date | dateHuge }}</h3>
+            </div>
+        </div>
+
+    {%- endfor -%}
+
+</div>
