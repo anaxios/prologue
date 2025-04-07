@@ -1,5 +1,9 @@
-{% extends "layouts/base.njk" %}
-{% block content %}
-    <h1>{{ page.url | prologueUrlToMonthDate }}</h1>
-    {{ content | safe }}
-{% endblock %}
+---
+layout: main
+---
+<div class="container">
+    <div class="flow text-container text-white h link txt-justify">
+        <h1>{{ page.url | prologueUrlToMonthDate }}</h1>
+        {{ content | safe }}
+    </div>
+</div>

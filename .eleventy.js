@@ -3,8 +3,12 @@ const { DateTime } = require("luxon");
 const TIME_ZONE = "America/Chicago";
 
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addPassthroughCopy("src/css");
-  eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("./src/assets");
+  eleventyConfig.addPassthroughCopy("./src/css");
+  // eleventyConfig.addPassthroughCopy("./src/images");
+  // eleventyConfig.addPassthroughCopy("./src/photos");
+  // eleventyConfig.addPassthroughCopy("./src/js");
+  // eleventyConfig.addPassthroughCopy("./src/favicon_data");
 
   eleventyConfig.addDateParsing(function (dateValue) {
     let localDate;
@@ -54,9 +58,14 @@ module.exports = (eleventyConfig) => {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
+    templateFormats: ["md", "liquid", "njk"],
+    passthroughFileCopy: true,
     dir: {
       input: "src",
       output: "dist",
+      layouts: "_includes/layouts",
+      includes: "_includes",
+      data: "_data",
     },
   };
 };

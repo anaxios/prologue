@@ -1,0 +1,27 @@
+---
+title: Art
+Description: Gallery of my art & other art I enjoy
+layout: main
+---
+
+<div class="h container gradient-text" style="padding-bottom:var(--xl);">
+    <h1>Art</h1>
+</div>
+<div class="flex container" style="flex-wrap: wrap; justify-content: space-evenly;">
+    {%- for image in gallery -%}
+
+        <div class="border-gradient bg-dark" >
+            <div class="h link">
+                <a href="/gallery/{{image.title | slug}}"><img src="{{image.imgDir}}{{image.src}}" height="150px" alt="{{image.alt}}">{{image.url}}</a>
+            </div>
+
+        </div>
+
+    {%- endfor -%}
+
+</div>
+
+{# {% extends "layouts/base.njk" %}
+{% block content %}
+    {{ content | safe }}
+{% endblock %} #}

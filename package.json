@@ -13,6 +13,9 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "hono": "^4.7.5",
-    "luxon": "^3.6.0"
+    "luxon": "^3.6.0",
+    "@11ty/eleventy-img": "^6.0.1",
+    "@11ty/eleventy-navigation": "^1.0.4",
+    "clean-css": "^5.3.3"
   }
 }

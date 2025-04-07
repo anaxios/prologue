@@ -1,15 +1,18 @@
 FROM oven/bun:latest AS build
 WORKDIR /app
 
-COPY src src
-COPY .eleventy.js .
-COPY package.json .
-COPY bun.lock     .
+COPY src           src
+COPY .eleventy.js  .
+COPY package.json  .
 
 RUN bun install
 RUN bun run eleventy
 
-FROM oven/bun:latest
+FROM build AS development
+
+ENTRYPOINT ["bun", "run", "eleventy", "--serve", "--port", "3000"]
+
+FROM oven/bun:latest AS production
 
 WORKDIR /app
 

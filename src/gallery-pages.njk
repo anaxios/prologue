@@ -1,0 +1,25 @@
+---
+layout: main
+pagination:
+    data: gallery
+    size: 1
+    alias: image
+permalink: "/gallery/{{ image.title | slug }}/"
+---
+<div class="flex flow container" style="flex-wrap:wrap; justify-content:center;">
+    <div>
+        <img src="{{image.imgDir}}{{image.src}}" alt="{{image.alt}}">
+    </div>
+    {% if pagination.href.previous %}
+        <div class="border-gradient">
+            <a href="{{pagination.href.previous}}">previous</a>
+        </div>
+    {% endif %}
+
+    {% if pagination.href.next %}
+        <div class="border-gradient" style="align-self: start;">
+            <a href="{{pagination.href.next}}">Next</a>
+        </div>
+    {% endif %}
+
+</div>

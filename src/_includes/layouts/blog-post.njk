@@ -1,10 +1,12 @@
-{% extends "layouts/base.njk" %}
-{% block content %}
-    <h1>
-        {{ title }}
-    </h1>
-    <h3>
-        {{ page.date | dateHuge }}
-    </h3>
-    {{ content | safe }}
-{% endblock %}
+---
+layout: main
+---
+<div class="container flow h link">
+    <div class="flow text-container bg-darker text-white h link txt-justify">
+        <h1>{{ title | capitalize }}</h1>
+        <h3>
+            {{ page.date | dateHuge }}
+        </h3>
+        {{ content | safe }}
+    </div>
+</div>
