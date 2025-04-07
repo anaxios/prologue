@@ -12,7 +12,13 @@ services:
     develop:
       watch:
         - action: rebuild
-          path: .
+          path: .eleventy.js
+          # path: index.js
+          ignore:
+            - src/
+        - action: sync
+          path: src/
+          target: /app/src
     # labels:
     #   - traefik.enable=true
     #   - traefik.http.middlewares.gzip.compress=true

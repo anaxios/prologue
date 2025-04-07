@@ -16,10 +16,6 @@
     "luxon": "^3.6.0",
     "@11ty/eleventy-img": "^6.0.1",
     "@11ty/eleventy-navigation": "^1.0.4",
-    "clean-css": "^5.3.3",
-    "eleventy-plugin-metagen": "",
-    "npm-run-all": "",
-    "sass": "",
-    "terser": ""
+    "clean-css": "^5.3.3"
   }
 }
