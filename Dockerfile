@@ -13,7 +13,7 @@ FROM build AS development
 
 ENTRYPOINT ["bun", "run", "eleventy", "--serve", "--port", "3000"]
 
-FROM oven/bun:latest
+FROM oven/bun:latest AS production
 
 WORKDIR /app
 
