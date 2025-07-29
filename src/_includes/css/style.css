@@ -196,11 +196,11 @@ h6 {
   margin-inline: auto;
   /* padding-top: var(--m); */
 }
-
+/*
 .text-container > p {
   text-indent: var(--xl);
 }
-
+*/
 nav {
   margin-top: var(--m);
 }
